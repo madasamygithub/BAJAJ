@@ -10,7 +10,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(input);
-      const result = await axios.post('https://<your-heroku-app>.herokuapp.com/bfhl', parsedInput);
+      const result = await axios.post('https://bajaj-j014.onrender.com/bfhl', parsedInput);
       setResponse(result.data);
       setError('');
     } catch (err) {
